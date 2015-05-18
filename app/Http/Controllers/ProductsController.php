@@ -33,7 +33,7 @@ class ProductsController extends Controller {
 	{
 		$types = Type::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
 		$categories = Category::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
-		$brochures = Brochure::where('status', '=', '1')->where('type', '=', 'Size Charts')->orderBy('name', 'ASC')->lists('name', 'id');
+		$brochures = Brochure::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
 		$colours = Colour::where('status', '=', '1')->lists('name', 'id');
 		return view('products.create', compact('types', 'categories', 'brochures', 'colours'));
 	}
@@ -99,7 +99,7 @@ class ProductsController extends Controller {
 		$product = Product::find($id);
 		$types = Type::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
 		$categories = Category::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
-		$brochures = Brochure::where('status', '=', '1')->where('type', '=', 'Size Charts')->orderBy('name', 'ASC')->lists('name', 'id');
+		$brochures = Brochure::where('status', '=', '1')->orderBy('name', 'ASC')->lists('name', 'id');
 		$colours = Colour::where('status', '=', '1')->lists('name', 'id');
 		return view('products.edit', compact('product', 'types', 'categories', 'brochures', 'colours'));
 	}
