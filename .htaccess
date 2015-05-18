@@ -1,0 +1,16 @@
+# Make all requests have the www. in them
+#prevent viewing of key.txt
+<files key.txt>
+ order allow,deny
+ deny from all
+</files>
+# serve custom error pages
+ErrorDocument 404 /error/404.php
+ErrorDocument 403 /error/403.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+    
+    RewriteCond $1 !^(emails) 
+</IfModule>

@@ -1,0 +1,197 @@
+/*   
+ * Template Name: Unify - Responsive Bootstrap Template
+ * Description: Business, Corporate, Portfolio and Blog Theme.
+ * Version: 1.3
+ * Author: Html Stream
+ * Website: http://htmlstream.com/preview/unify
+*/
+
+.img-binding {
+		overflow:hidden;
+		position:relative;
+		width:212px; 
+		height:150px;
+		margin: auto;
+	}
+	.img-binding-slider {
+		overflow:hidden;
+		position:relative;
+		width:360px; 
+		height:260px;
+	}
+
+/* Small devices (tablets, 767px and less) */
+@media (max-width: 767px) { 
+	.img-binding {
+		overflow:hidden;
+		position:relative;
+		width:265px; 
+		height:190px;
+	}
+	.img-binding-slider {
+		overflow:hidden;
+		position:relative;
+		width:360px; 
+		height:260px;
+		margin:auto;
+	}
+	/*Phone Number*/
+	.pull-right {
+		float: none !important;
+	}
+	.pull-left {
+		width: 100%;
+	}
+	
+	/*Intro Block*/
+	.intro span {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	#full-width-slider a.btn-more {
+		font-size:12px;
+		padding:7px 12px 4px;
+		text-align:center;
+	}	
+	
+	.intro a.btn-more {
+		font-size:14px;
+		padding:9px 22px 6px;				
+	}	
+	/*End Intro Block*/
+	
+	/*Purchase Block*/
+	.purchase span {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.purchase a.btn-buy {
+		font-size:14px;
+		padding:9px 22px 6px;				
+	}	
+	/*End Purchase Block*/
+
+	/*Table Hidden Class*/
+	.table th.hidden-sm,
+	.table td.hidden-sm {
+		display: none !important;
+	}
+	/*End Table Hidden Class*/
+
+	/*Spaces (Margin Bottom)*/
+	.mb-margin-bottom-20 {
+		margin-bottom: 20px;
+	}
+	.mb-margin-bottom-30 {
+		margin-bottom: 30px;
+	}
+	.mb-margin-bottom-40 {
+		margin-bottom: 40px;
+	}
+	.mb-margin-bottom-50 {
+		margin-bottom: 50px;
+	}
+	.mb-margin-bottom-60 {
+		margin-bottom: 60px;
+	}
+	/*End Spacea (Margin Bottom)*/
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+	.img-binding {
+		overflow:hidden;
+		position:relative;
+		width:345px; 
+		height:250px;
+	}
+	.img-binding-slider {
+		overflow:hidden;
+		position:relative;
+		width:360px; 
+		height:260px;
+		margin:auto;
+	}
+	/*Spaces (Margin Bottom)*/
+	.md-margin-bottom-20 {
+		margin-bottom: 20px;
+	}
+	.md-margin-bottom-30 {
+		margin-bottom: 30px;
+	}
+	.md-margin-bottom-40 {
+		margin-bottom: 40px;
+	}
+	.md-margin-bottom-50 {
+		margin-bottom: 50px;
+	}
+	.md-margin-bottom-60 {
+		margin-bottom: 60px;
+	}
+	/*End Spacea (Margin Bottom)*/
+}
+
+/*Sliders
+------------------------------------*/
+@media (max-width: 900px) {
+	.img-binding {
+		margin:auto;
+		width:345px; 
+		height:250px;
+	}
+	.img-binding-slider {
+		overflow:hidden;
+		position:relative;
+		width:360px; 
+		height:260px;
+		margin:auto;
+	}
+	/*Slider Sequence*/
+	#sequence-theme .info {
+		top:80px !important;
+		width:60% !important;
+		margin-right:50px;
+	}
+
+	/*Slider Parallax*/
+	.da-slide .da-img {
+		display:none;
+	}
+}
+
+@media (max-width: 450px) {
+	.promo-text {
+		display:none;
+	}
+	.img-binding {
+		margin:auto;
+		width:265px; 
+		height:190px;
+	}
+	.img-binding-slider {
+		overflow:hidden;
+		position:relative;
+		width:360px; 
+		height:260px;
+		margin:auto;
+	}
+	/*Slider Sequence*/
+	#sequence-theme .info {
+		top:70px !important;
+		width:70% !important;
+		margin-right:25px;
+	}
+	#sequence-theme h2 {
+		font-size:30px !important;
+	}
+	#sequence-theme .info p {
+		font-size:18px !important;
+	}
+
+	/*Slider Parallax*/
+	.da-slide p {
+		display:none;
+	}
+}
