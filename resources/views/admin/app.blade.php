@@ -127,8 +127,9 @@
 		$('#colour_list').select2({
 			placeholder: 'Choose a colour'
 		});
-	</script>
-	<script type="text/javascript">
+		$('#brochure_id').select2({
+			placeholder: 'Choose a Brochure'
+		});
 		$('#tag_list').select2({
 			placeholder: 'Choose a tag',
 			tags: true
