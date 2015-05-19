@@ -53,13 +53,13 @@
 </div>
 
 <div class="form-group row">
-	<div class="col-md-4 {!! $errors->has('type_id') ? 'has-error' : '' !!}">
-		<label for="type_id">Type</label>
-		{!! Form::select('type_id', $types, Input::old('type_id'), ['class' => 'form-control', 'id' => 'type_id']) !!}
-	</div>
 	<div class="col-md-4 {!! $errors->has('category_id') ? 'has-error' : '' !!}">
 		<label for="category_id">Category</label>
 		{!! Form::select('category_id', $categories, Input::old('category_id'), ['class' => 'form-control', 'id' => 'category_id']) !!}
+	</div>
+	<div class="col-md-4 {!! $errors->has('type_id') ? 'has-error' : '' !!}">
+		<label for="type_id">Type</label>
+		{!! Form::select('type_id', $types, Input::old('type_id'), ['class' => 'form-control', 'id' => 'type_id']) !!}
 	</div>
 	<div class="col-md-4 {!! $errors->has('brochure_id') ? 'has-error' : '' !!}">
 		<label for="brochure_id">Brochure</label>

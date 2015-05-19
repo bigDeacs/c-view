@@ -25,7 +25,7 @@ class ContactRequest extends Request {
 			'name' 		=> 'required',
 			'email' 	=> 'required',
 			'phone'		=> 'required',
-			'message'	=> 'required'
+			'info'	=> 'required'
 		];
 	}
 

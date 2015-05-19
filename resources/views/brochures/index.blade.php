@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading"><h1>Brochures<a href="{{ url('/brochures/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
+				<div class="panel-heading"><h1>Brochures<a href="{{ url('/home/brochures/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
 
 				<div class="panel-body">
 					<div class="table-responsive" style="padding-bottom: 10px;">
@@ -35,11 +35,11 @@
 											<td>{!! $brochure->type !!}</td>
 											<td>
 												<div class="btn-group" role="group" style="display: flex;">
-													<a href="{{ url('/brochures/'.$brochure->id.'/edit') }}" class="btn btn-warning btn-sm">Edit</a>
+													<a href="{{ url('/home/brochures/'.$brochure->id.'/edit') }}" class="btn btn-warning btn-sm">Edit</a>
 													@if($brochure->status == 0)
-														<a href="{{ url('/brochures/'.$brochure->id.'/activate') }}" class="btn btn-success btn-sm">Activate</a>
+														<a href="{{ url('/home/brochures/'.$brochure->id.'/activate') }}" class="btn btn-success btn-sm">Activate</a>
 													@else
-														<a href="{{ url('/brochures/'.$brochure->id.'/deactivate') }}" class="btn btn-danger btn-sm">Deactivate</a>
+														<a href="{{ url('/home/brochures/'.$brochure->id.'/deactivate') }}" class="btn btn-danger btn-sm">Deactivate</a>
 													@endif
 												</div>
 											</td>

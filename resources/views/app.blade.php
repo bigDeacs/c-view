@@ -65,7 +65,7 @@
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	                </button>
-	                <a class="navbar-brand" href="index.php">
+	                <a class="navbar-brand" href="/">
 	                    <img id="logo-header" src="/images/{!! $brand->logo !!}" width="200" alt="Logo">
 	                </a>
 	            </div>
@@ -79,29 +79,29 @@
 	                            <i class="icon-angle-down"></i>
 	                        </a>
 	                        <ul class="dropdown-menu">
-	                            <li><a href="windows.php">Windows</a></li>
-	                            <li><a href="doors.php">Doors</a></li>
-								<li><a href="commercial.php">Commercial</a></li>
-								<li><a href="screens.php">Screens</a></li>
+	                            <li><a href="/windows">Windows</a></li>
+	                            <li><a href="/doors">Doors</a></li>
+								<li><a href="/commercials">Commercial</a></li>
+								<li><a href="/screens">Screens</a></li>
 	                        </ul>
 	                    </li>
 						<li>
-	                        <a href="brochures.php">
+	                        <a href="/brochures">
 	                            Brochures
 	                        </a>
 	                    </li>
 						<li>
-							<a href="faq.php">
+							<a href="/faq">
 	                            FAQ's
 	                        </a>
 						</li>
 	                    <li>
-	                        <a href="about.php">
+	                        <a href="/about">
 	                            About
 	                        </a>
 	                    </li>
 	                    <li>
-	                        <a href="contact.php">
+	                        <a href="/contact">
 	                            Contact
 	                        </a>
 	                    </li>                    

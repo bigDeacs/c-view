@@ -8,7 +8,7 @@
 				@if($brand)
 					<div class="panel-heading"><h1>Brand Settings</h1></div>
 				@else
-					<div class="panel-heading"><h1>Brand Settings<a href="{{ url('/brands/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
+					<div class="panel-heading"><h1>Brand Settings<a href="{{ url('/home/brands/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
 				@endif
 
 				<div class="panel-body">
@@ -31,7 +31,7 @@
 											<td><a href="{!! $brand->website !!}" target="_blank">C-View.com.au</a></td>
 											<td>
 												<div class="btn-group" role="group" style="display: flex;">
-													<a href="{{ url('/brands/'.$brand->id) }}" class="btn btn-primary btn-sm">View</a>
+													<a href="{{ url('/home/brands/'.$brand->id) }}" class="btn btn-primary btn-sm">View</a>
 												</div>
 											</td>
 										</tr>

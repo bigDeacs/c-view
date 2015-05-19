@@ -37,7 +37,7 @@ class CategoriesController extends Controller {
 	public function store(CreateCategory $request)
 	{
 		$category = Category::create($request->all());
-		return redirect('categories');
+		return redirect('home/categories');
 	}
 	
 	/**
@@ -48,7 +48,7 @@ class CategoriesController extends Controller {
 	 */
 	public function show($id)
 	{
-		return redirect('categories');	
+		return redirect('home/categories');	
 	}
 
 	/**
@@ -67,7 +67,7 @@ class CategoriesController extends Controller {
 		$category = Category::find($id);
 		$category->update($request->all());
 		$category->save();		
-		return redirect('categories');
+		return redirect('home/categories');
 	}
 
 	public function activate($id)
@@ -76,7 +76,7 @@ class CategoriesController extends Controller {
 		$category->status = 1;
 		$category->save();
 
-		return redirect('categories');
+		return redirect('home/categories');
 	}
 
 	public function deactivate($id)
@@ -85,6 +85,6 @@ class CategoriesController extends Controller {
    		$category->status = 0;
 		$category->save();
 
-      	return redirect('categories');
+      	return redirect('home/categories');
    	}
 }

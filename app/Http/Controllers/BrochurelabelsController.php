@@ -37,7 +37,7 @@ class BrochurelabelsController extends Controller {
 	public function store(CreateLabel $request)
 	{
 		$label = Label::create($request->all());
-		return redirect('brochurelabels');
+		return redirect('home/brochurelabels');
 	}
 	
 	/**
@@ -48,7 +48,7 @@ class BrochurelabelsController extends Controller {
 	 */
 	public function show($id)
 	{
-		return redirect('brochurelabels');	
+		return redirect('home/brochurelabels');	
 	}
 
 	/**
@@ -67,7 +67,7 @@ class BrochurelabelsController extends Controller {
 		$label = Label::find($id);
 		$label->update($request->all());
 		$label->save();		
-		return redirect('brochurelabels');
+		return redirect('home/brochurelabels');
 	}
 
 	public function activate($id)
@@ -76,7 +76,7 @@ class BrochurelabelsController extends Controller {
 		$label->status = 1;
 		$label->save();
 
-		return redirect('brochurelabels');
+		return redirect('home/brochurelabels');
 	}
 
 	public function deactivate($id)
@@ -85,6 +85,6 @@ class BrochurelabelsController extends Controller {
    		$label->status = 0;
 		$label->save();
 
-      	return redirect('brochurelabels');
+      	return redirect('home/brochurelabels');
    	}
 }

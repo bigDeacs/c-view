@@ -5,10 +5,10 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading"><h1>Create Brochure<a href="{{ url('/brochures') }}" class="btn btn-primary btn-lg"style="float: right;">Back</a></h1></div>
+				<div class="panel-heading"><h1>Create Brochure<a href="{{ url('/home/brochures') }}" class="btn btn-primary btn-lg"style="float: right;">Back</a></h1></div>
 
 				<div class="panel-body">
-					{!! Form::open(['files'=> true, 'route' => 'brochures.index']) !!}
+					{!! Form::open(['files'=> true, 'route' => 'home.brochures.index']) !!}
 					    @include('brochures._form')
 					{!! Form::close() !!}
 				</div>

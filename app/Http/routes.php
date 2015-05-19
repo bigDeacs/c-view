@@ -11,16 +11,16 @@
 |
 */
 
+# Admin
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('/', 'PagesController@index');
-
-Route::group(['before' => 'auth'], function()
+Route::group(['before' => 'auth', 'prefix' => 'home'], function()
 {	
-	Route::get('home', 'HomeController@index');
+	Route::get('/', 'HomeController@index');
 
 	# Products
 	Route::get('products/{products}/activate', ['as' => 'products.activate', 'uses' => 'ProductsController@activate']);
@@ -101,3 +101,21 @@ Route::get('thumbs/{thumb}', function($thumb)
 	$filepath = storage_path() . '/thumbs/' . $thumb;
 	return Response::download($filepath);
 });
+
+# Website
+Route::get('/', 'PagesController@index');
+Route::get('windows', 'PagesController@windows');
+Route::get('window/{id}', 'PagesController@window');
+Route::get('doors', 'PagesController@doors');
+Route::get('door/{id}', 'PagesController@door');
+Route::get('commercials', 'PagesController@commercials');
+Route::get('commercial/{id}', 'PagesController@commercial');
+Route::get('screens', 'PagesController@screens');
+Route::get('screen/{id}', 'PagesController@screen');
+Route::get('brochures', 'PagesController@brochures');
+Route::get('faqs/{id}', 'PagesController@faqs');
+Route::get('about', 'PagesController@about');
+Route::get('contact', 'PagesController@contact');
+Route::post('contact', ['as' => 'contactRequest', 'uses' => 'PagesController@contactRequest']);
+Route::get('thankyou', 'PagesController@thankyou');
+Route::get('privacy', 'PagesController@privacy');

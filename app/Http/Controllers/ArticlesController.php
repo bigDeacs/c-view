@@ -58,7 +58,7 @@ class ArticlesController extends Controller {
 			}
 			$article->tags()->sync($currentTags);
 		}
-		return redirect('articles');
+		return redirect('home/articles');
 	}
 
 	/**
@@ -113,7 +113,7 @@ class ArticlesController extends Controller {
 		$article = Article::find($id);
 		$article->status = 1;
 		$article->save();
-		return redirect('articles');
+		return redirect('home/articles');
 	}
 
 	public function deactivate($id)
@@ -121,7 +121,7 @@ class ArticlesController extends Controller {
    		$article = Article::find($id);
    		$article->status = 0;
 		$article->save();
-      	return redirect('articles');
+      	return redirect('home/articles');
    	}
 
 }

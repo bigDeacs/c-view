@@ -37,7 +37,7 @@ class ImagelabelsController extends Controller {
 	public function store(CreateLabel $request)
 	{
 		$label = Label::create($request->all());
-		return redirect('imagelabels');
+		return redirect('home/imagelabels');
 	}
 	
 	/**
@@ -48,7 +48,7 @@ class ImagelabelsController extends Controller {
 	 */
 	public function show($id)
 	{
-		return redirect('imagelabels');	
+		return redirect('home/imagelabels');	
 	}
 
 	/**
@@ -67,7 +67,7 @@ class ImagelabelsController extends Controller {
 		$label = Label::find($id);
 		$label->update($request->all());
 		$label->save();		
-		return redirect('imagelabels');
+		return redirect('home/imagelabels');
 	}
 
 	public function activate($id)
@@ -76,7 +76,7 @@ class ImagelabelsController extends Controller {
 		$label->status = 1;
 		$label->save();
 
-		return redirect('imagelabels');
+		return redirect('home/imagelabels');
 	}
 
 	public function deactivate($id)
@@ -85,6 +85,6 @@ class ImagelabelsController extends Controller {
    		$label->status = 0;
 		$label->save();
 
-      	return redirect('imagelabels');
+      	return redirect('home/imagelabels');
    	}
 }

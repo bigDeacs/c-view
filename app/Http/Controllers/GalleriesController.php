@@ -53,7 +53,7 @@ class GalleriesController extends Controller {
 			}
 		} 
 		$image->save();
-		return redirect('galleries');
+		return redirect('home/galleries');
 	}
 
 	/**
@@ -64,7 +64,7 @@ class GalleriesController extends Controller {
 	 */
 	public function show($id)
 	{
-		return redirect('galleries');	
+		return redirect('home/galleries');	
 	}
 
 	/**
@@ -97,7 +97,7 @@ class GalleriesController extends Controller {
 			}
 		}
 		$image->save();		
-		return redirect('galleries');
+		return redirect('home/galleries');
 	}
 
 	public function activate($id)
@@ -106,7 +106,7 @@ class GalleriesController extends Controller {
 		$image->status = 1;
 		$image->save();
 
-		return redirect('galleries');
+		return redirect('home/galleries');
 	}
 
 	public function deactivate($id)
@@ -115,7 +115,7 @@ class GalleriesController extends Controller {
    		$image->status = 0;
 		$image->save();
 
-      	return redirect('galleries');
+      	return redirect('home/galleries');
    	}
 
 }

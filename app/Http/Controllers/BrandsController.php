@@ -44,14 +44,14 @@ class BrandsController extends Controller {
 			if($request->file('logo')->isValid()) 
 			{
 				$logo = $request->file('logo');
-				$moveLogo = $logo->move(storage_path() . '/images', $filename = time() . '-' . $logo->getClientOriginalName());
+				$moveLogo = $logo->move(public_path() . '/images', $filename = time() . '-' . $logo->getClientOriginalName());
 				$brand->logo = $filename;
 			} else {
 				return redirect()->back()->withInput();
 			}	
 			$brand->save();	
 		} 
-		return redirect('brands');
+		return redirect('home/brands');
 	}
 
 	/**
@@ -95,7 +95,7 @@ class BrandsController extends Controller {
 			}
 		}
 		$brand->save();		
-		return redirect('brands');
+		return redirect('home/brands');
 	}
 
 }

@@ -5,10 +5,10 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading"><h1>Edit {!! $brand->name !!}<a href="{{ url('/brands') }}" class="btn btn-primary btn-lg"style="float: right;">Back</a></h1></div>
+				<div class="panel-heading"><h1>Edit {!! $brand->name !!}<a href="{{ url('/home/brands') }}" class="btn btn-primary btn-lg"style="float: right;">Back</a></h1></div>
 
 				<div class="panel-body">
-					{!! Form::model($brand, ['files'=> true, 'route' => ['brands.show', $brand->id], 'method' => 'PATCH']) !!}
+					{!! Form::model($brand, ['files'=> true, 'route' => ['home.brands.show', $brand->id], 'method' => 'PATCH']) !!}
 
 						{!! Form::hidden('id', null) !!}
 						@include('brands._form')

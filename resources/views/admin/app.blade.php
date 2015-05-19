@@ -41,38 +41,38 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Products <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/products') }}"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Products</a></li>
-								<li><a href="{{ url('/productrankings') }}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Product Ranking</a></li>
+								<li><a href="{{ url('/home/products') }}"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Products</a></li>
+								<li><a href="{{ url('/home/productrankings') }}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Product Ranking</a></li>
 								<li class="divider"></li>
-								<li><a href="{{ url('/categories') }}"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Product Categories</a></li>
-								<li><a href="{{ url('/types') }}"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Product Types</a></li>
-								<li><a href="{{ url('/colours') }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Product Colours</a></li>
+								<li><a href="{{ url('/home/categories') }}"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Product Categories</a></li>
+								<li><a href="{{ url('/home/types') }}"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Product Types</a></li>
+								<li><a href="{{ url('/home/colours') }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Product Colours</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Brochures <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/brochures') }}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Brochures</a></li>
-								<li><a href="{{ url('/brochurerankings') }}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Brochure Ranking</a></li>
+								<li><a href="{{ url('/home/brochures') }}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Brochures</a></li>
+								<li><a href="{{ url('/home/brochurerankings') }}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Brochure Ranking</a></li>
 								<li class="divider"></li>
-								<li><a href="{{ url('/brochurelabels') }}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Brochure Labels</a></li>
-								<li><a href="{{ url('/pdfs') }}"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> PDF Tools</a></li>
+								<li><a href="{{ url('/home/brochurelabels') }}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Brochure Labels</a></li>
+								<li><a href="{{ url('/home/pdfs') }}"><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> PDF Tools</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Gallery <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/galleries') }}"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Gallery</a></li>
-								<li><a href="{{ url('/galleryrankings') }}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Gallery Ranking</a></li>
+								<li><a href="{{ url('/home/galleries') }}"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Gallery</a></li>
+								<li><a href="{{ url('/home/galleryrankings') }}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Gallery Ranking</a></li>
 								<li class="divider"></li>
-								<li><a href="{{ url('/imagelabels') }}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Gallery Labels</a></li>
+								<li><a href="{{ url('/home/imagelabels') }}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Gallery Labels</a></li>
 							</ul>
 						</li>
 						<li class="disabled"><a href="#"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Merchandise</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Blog <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/articles') }}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Blog</a></li>
+								<li><a href="{{ url('/home/articles') }}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Blog</a></li>
 							</ul>
 						</li>
 					@endif
@@ -86,7 +86,7 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ Auth::user()->name }} <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/brands') }}"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Settings</a></li>
+								<li><a href="{{ url('/home/brands') }}"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Settings</a></li>
 								<li class="divider"></li>
 								<li><a href="{{ url('/auth/logout') }}"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Logout</a></li>
 							</ul>

@@ -48,6 +48,6 @@ class BrochurerankingsController extends Controller {
 		for ($i = 0; $i < $count; $i++) {
 		    $ranking = Ranking::create(['rank' => $i+1, 'rankable_type' => $rankable_type, 'rankable_id' => $request->rankable_id[$i]]);
 		} 
-		return redirect('brochurerankings');
+		return redirect('home/brochurerankings');
 	}
 }

@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading"><h1>Products<a href="{{ url('/products/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
+				<div class="panel-heading"><h1>Products<a href="{{ url('/home/products/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
 
 				<div class="panel-body">
 					<div class="table-responsive" style="padding-bottom: 10px;">
@@ -15,8 +15,8 @@
 							        <tr>
 							            <th><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> ID</th>							            
 							            <th><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Name</th>
-							            <th><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Type</th>
 							            <th><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Category</th>
+							            <th><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Type</th>
 							            <th><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Settings</th>
 							        </tr>
 							    </thead>
@@ -29,15 +29,15 @@
 										@endif
 											<td>{!! $product->id !!}</td>
 											<td>{!! $product->name !!}</td>
-											<td>{!! $product->type->name !!}</td>
 											<td>{!! $product->category->name !!}</td>
+											<td>{!! $product->type->name !!}</td>
 											<td>
 												<div class="btn-group" role="group" style="display: flex;">
-													<a href="{{ url('/products/'.$product->id) }}" class="btn btn-primary btn-sm">View</a>
+													<a href="{{ url('/home/products/'.$product->id) }}" class="btn btn-primary btn-sm">View</a>
 													@if($product->status == 0)
-														<a href="{{ url('/products/'.$product->id.'/activate') }}" class="btn btn-success btn-sm">Activate</a>
+														<a href="{{ url('/home/products/'.$product->id.'/activate') }}" class="btn btn-success btn-sm">Activate</a>
 													@else
-														<a href="{{ url('/products/'.$product->id.'/deactivate') }}" class="btn btn-danger btn-sm">Deactivate</a>
+														<a href="{{ url('/home/products/'.$product->id.'/deactivate') }}" class="btn btn-danger btn-sm">Deactivate</a>
 													@endif
 												</div>
 											</td>

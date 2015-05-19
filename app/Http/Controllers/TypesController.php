@@ -37,7 +37,7 @@ class TypesController extends Controller {
 	public function store(CreateType $request)
 	{
 		$type = Type::create($request->all());
-		return redirect('types');
+		return redirect('home/types');
 	}
 
 	/**
@@ -48,7 +48,7 @@ class TypesController extends Controller {
 	 */
 	public function show($id)
 	{
-		return redirect('types');	
+		return redirect('home/types');	
 	}
 
 	/**
@@ -67,7 +67,7 @@ class TypesController extends Controller {
 		$type = Type::find($id);
 		$type->update($request->all());
 		$type->save();		
-		return redirect('types');
+		return redirect('home/types');
 	}
 
 	public function activate($id)
@@ -76,7 +76,7 @@ class TypesController extends Controller {
 		$type->status = 1;
 		$type->save();
 
-		return redirect('types');
+		return redirect('home/types');
 	}
 
 	public function deactivate($id)
@@ -85,7 +85,7 @@ class TypesController extends Controller {
    		$type->status = 0;
 		$type->save();
 
-      	return redirect('types');
+      	return redirect('home/types');
    	}
 
 }

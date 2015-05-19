@@ -37,7 +37,7 @@ class ColoursController extends Controller {
 	public function store(CreateColour $request)
 	{
 		$colour = Colour::create($request->all());
-		return redirect('colours');
+		return redirect('home/colours');
 	}
 
 	/**
@@ -48,7 +48,7 @@ class ColoursController extends Controller {
 	 */
 	public function show($id)
 	{
-		return redirect('colours');	
+		return redirect('home/colours');	
 	}
 
 	/**
@@ -67,7 +67,7 @@ class ColoursController extends Controller {
 		$colour = Colour::find($id);
 		$colour->update($request->all());
 		$colour->save();		
-		return redirect('colours');
+		return redirect('home/colours');
 	}
 
 	public function activate($id)
@@ -76,7 +76,7 @@ class ColoursController extends Controller {
 		$colour->status = 1;
 		$colour->save();
 
-		return redirect('colours');
+		return redirect('home/colours');
 	}
 
 	public function deactivate($id)
@@ -85,7 +85,7 @@ class ColoursController extends Controller {
    		$colour->status = 0;
 		$colour->save();
 
-      	return redirect('colours');
+      	return redirect('home/colours');
    	}
 
 }

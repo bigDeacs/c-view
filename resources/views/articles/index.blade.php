@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading"><h1>Blog Articles<a href="{{ url('/articles/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
+				<div class="panel-heading"><h1>Blog Articles<a href="{{ url('/home/articles/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
 
 				<div class="panel-body">
 					<div class="table-responsive" style="padding-bottom: 10px;">
@@ -35,11 +35,11 @@
 											<td>{!! $article->published_at->diffForHumans() !!}</td>
 											<td>
 												<div class="btn-group" role="group" style="display: flex;">
-													<a href="{{ url('/articles/'.$article->id) }}" class="btn btn-primary btn-sm">View</a>
+													<a href="{{ url('/home/articles/'.$article->id) }}" class="btn btn-primary btn-sm">View</a>
 													@if($article->status == 0)
-														<a href="{{ url('/articles/'.$article->id.'/activate') }}" class="btn btn-success btn-sm">Activate</a>
+														<a href="{{ url('/home/articles/'.$article->id.'/activate') }}" class="btn btn-success btn-sm">Activate</a>
 													@else
-														<a href="{{ url('/articles/'.$article->id.'/deactivate') }}" class="btn btn-danger btn-sm">Deactivate</a>
+														<a href="{{ url('/home/articles/'.$article->id.'/deactivate') }}" class="btn btn-danger btn-sm">Deactivate</a>
 													@endif
 												</div>
 											</td>

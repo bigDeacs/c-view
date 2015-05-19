@@ -73,7 +73,7 @@ class ProductsController extends Controller {
 			}
 			$product->images()->sync($sync);
 		}
-		return redirect('products');
+		return redirect('home/products');
 	}
 
 	/**
@@ -145,7 +145,7 @@ class ProductsController extends Controller {
 		$product = Product::find($id);
 		$product->status = 1;
 		$product->save();
-		return redirect('products');
+		return redirect('home/products');
 	}
 
 	public function deactivate($id)
@@ -153,7 +153,7 @@ class ProductsController extends Controller {
    		$product = Product::find($id);
    		$product->status = 0;
 		$product->save();
-      	return redirect('products');
+      	return redirect('home/products');
    	}
 
 }

@@ -64,7 +64,7 @@ class BrochuresController extends Controller {
 			}
 		} 
 		$brochure->save();
-		return redirect('brochures');
+		return redirect('home/brochures');
 	}
 
 	/**
@@ -75,7 +75,7 @@ class BrochuresController extends Controller {
 	 */
 	public function show($id)
 	{
-		return redirect('brochures');	
+		return redirect('home/brochures');	
 	}
 
 	/**
@@ -121,7 +121,7 @@ class BrochuresController extends Controller {
 			}
 		}
 		$brochure->save();		
-		return redirect('brochures');
+		return redirect('home/brochures');
 	}
 
 	public function activate($id)
@@ -130,7 +130,7 @@ class BrochuresController extends Controller {
 		$brochure->status = 1;
 		$brochure->save();
 
-		return redirect('brochures');
+		return redirect('home/brochures');
 	}
 
 	public function deactivate($id)
@@ -139,7 +139,7 @@ class BrochuresController extends Controller {
    		$brochure->status = 0;
 		$brochure->save();
 
-      	return redirect('brochures');
+      	return redirect('home/brochures');
    	}
 
 }

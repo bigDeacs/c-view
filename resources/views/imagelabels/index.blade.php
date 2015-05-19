@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading"><h1>Gallery Labels<a href="{{ url('/imagelabels/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
+				<div class="panel-heading"><h1>Gallery Labels<a href="{{ url('/home/imagelabels/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
 
 				<div class="panel-body">
 					<div class="table-responsive" style="padding-bottom: 10px;">
@@ -29,11 +29,11 @@
 											<td>{!! $label->name !!}</td>
 											<td>
 												<div class="btn-group" role="group" style="display: flex;">
-													<a href="{{ url('/imagelabels/'.$label->id.'/edit') }}" class="btn btn-warning btn-sm">Edit</a>
+													<a href="{{ url('/home/imagelabels/'.$label->id.'/edit') }}" class="btn btn-warning btn-sm">Edit</a>
 													@if($label->status == 0)
-														<a href="{{ url('/imagelabels/'.$label->id.'/activate') }}" class="btn btn-success btn-sm">Activate</a>
+														<a href="{{ url('/home/imagelabels/'.$label->id.'/activate') }}" class="btn btn-success btn-sm">Activate</a>
 													@else
-														<a href="{{ url('/imagelabels/'.$label->id.'/deactivate') }}" class="btn btn-danger btn-sm">Deactivate</a>
+														<a href="{{ url('/home/imagelabels/'.$label->id.'/deactivate') }}" class="btn btn-danger btn-sm">Deactivate</a>
 													@endif
 												</div>
 											</td>
