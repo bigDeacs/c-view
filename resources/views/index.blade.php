@@ -87,7 +87,7 @@
 					        <div class="col-md-4">
 					    		<div class="service service-blue">
 					    			<div class="desc">
-					    				<h3>{!! $brochure->name !!}</h3>
+					                    <h3><a class="hover-effect" href="/uploads/{!! $brochure->file !!}">{!! $brochure->name !!}</a></h3>
 					                    <p class="hidden-xs">{!! $brochure->description !!}</p>
 						                <a href="/uploads/{!! $brochure->file !!}" target="_blank" class="btn-more btn-more-blue btn-block hover-effect">Find Out More</a>            
 					    			</div>
