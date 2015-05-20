@@ -46,7 +46,7 @@ if ( ! function_exists('app'))
 	 * @param  array   $parameters
 	 * @return mixed|\Illuminate\Foundation\Application
 	 */
-	function app($make = null, $parameters = null)
+	function app($make = null, $parameters = [])
 	{
 		if (is_null($make)) return Container::getInstance();
 
@@ -406,7 +406,7 @@ if ( ! function_exists('resource'))
 	 * @param  array   $options
 	 * @return void
 	 */
-	function resource($name, $controller, array $options = null)
+	function resource($name, $controller, array $options = [])
 	{
 		return app('router')->resource($name, $controller, $options);
 	}
