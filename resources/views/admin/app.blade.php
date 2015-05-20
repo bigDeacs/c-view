@@ -68,7 +68,12 @@
 								<li><a href="{{ url('/home/imagelabels') }}"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Gallery Labels</a></li>
 							</ul>
 						</li>
-						<li class="disabled"><a href="#"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Merchandise</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Merchandise <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="{{ url('/home/offers') }}"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Merchandise</a></li>
+							</ul>
+						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Blog <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">

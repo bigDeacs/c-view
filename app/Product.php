@@ -42,6 +42,11 @@ class Product extends Model {
         return $this->belongsTo('App\Brochure');
     }
 
+    public function offers()
+    {
+        return $this->hasMany('App\Offer');
+    }
+
     public function rank()
     {
         return $this->morphMany('App\Ranking', 'rankable');

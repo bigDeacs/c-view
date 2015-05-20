@@ -15,6 +15,12 @@
 	<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true" data-interval="5000" data-transitiontime="300">
  		<div class="slides" data-group="slides">
 		    <ul>
+	      		@foreach($offers as $offer)
+			        <div class="slide-body" data-group="slide">
+			          <img src="/images/{!! $offer->file !!}" alt="{!! $offer->promo !!}">
+			        </div>
+		      	</li>        
+			    @endforeach
 	      		<li>
 			        <div class="slide-body" data-group="slide">
 			          <img src="{{ asset('/img/full-width/2.jpg') }}" alt="Burleigh Beach, Gold Coast">
@@ -45,7 +51,7 @@
 	                <p class="hidden-xs">At C-View, you will see the dedication to service of a highly-skilled team of local, Gold Coast professionals. Though we specialise in window and door renovation projects, we handle each project with the same kid-glove care, whether from renovator, builder, owner, or handyman.</p>
 	            </div>            
 	            <div class="col-md-3 hidden-xs">
-	                <a href="/about.php" class="btn-more hover-effect">Find Out More</a>            
+	                <a href="/about" class="btn-more hover-effect">Find Out More</a>            
 	            </div>
 	        </div>
 	    </div>

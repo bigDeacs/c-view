@@ -42,6 +42,11 @@ Route::group(['before' => 'auth', 'prefix' => 'home'], function()
 	Route::get('brochures/{brochures}/deactivate', ['as' => 'brochures.deactivate', 'uses' => 'BrochuresController@deactivate']);
 	Route::resource('brochures', 'BrochuresController', ['except' => ['destroy']]);
 
+	# Offers
+	Route::get('offers/{offers}/activate', ['as' => 'offers.activate', 'uses' => 'OffersController@activate']);
+	Route::get('offers/{offers}/deactivate', ['as' => 'offers.deactivate', 'uses' => 'OffersController@deactivate']);
+	Route::resource('offers', 'OffersController', ['except' => ['destroy']]);
+
 	# PDFs
 	Route::resource('pdfs', 'PDFsController', ['only' => ['index']]);
 

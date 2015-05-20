@@ -4,6 +4,7 @@ use App\Brand;
 use App\Product;
 use App\Brochure;
 use App\Label;
+use App\Offer;
 use Mail;
 use App\Http\Requests\ContactRequest;
 
@@ -35,6 +36,8 @@ class PagesController extends Controller {
 	 */
 	public function index()
 	{
+		$offers = Offer::where('status', '=', 1)->take(5)->get();
+		$this->data['offers'] = $offers;
 		$products = Product::where('status', '=', 1)->get();
 		foreach($products as $product)
 		{
