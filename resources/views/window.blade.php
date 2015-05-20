@@ -14,10 +14,10 @@
 
 @section('content')
 	<!--=== Breadcrumbs ===-->
-	<div class="breadcrumbs margin-bottom-20 hidden-xs">
+	<div class="breadcrumbs margin-bottom-20">
 	    <div class="container">
 	        <h1 class="pull-left">{!! $product['name'] !!}</h1>
-	        <ul class="pull-right breadcrumb">
+	        <ul class="pull-right breadcrumb hidden-xs">
 	            <li><a href="/">Home</a></li>
 	            <li><a href="/windows">{!! $product->category->name !!}</a></li>
 	            <li class="active">{!! $product['name'] !!}</li>

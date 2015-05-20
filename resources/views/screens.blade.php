@@ -11,10 +11,10 @@
 
 @section('content')
 	<!--=== Breadcrumbs ===-->
-	<div class="breadcrumbs margin-bottom-20 hidden-xs">
+	<div class="breadcrumbs margin-bottom-20">
 	    <div class="container">
-	        <h1 class="pull-left">title</h1>
-	        <ul class="pull-right breadcrumb">
+	        <h1 class="pull-left">Security Screens</h1>
+	        <ul class="pull-right breadcrumb hidden-xs">
 	            <li><a href="/">Home</a></li>
 	            <li class="active">Screens</li>
 	        </ul>

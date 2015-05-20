@@ -53,26 +53,6 @@
 	<!-- End Intro Block -->
 	<!--=== Content Part ===-->
 	<div class="container">	
-		<!-- Service Blocks -->
-		<div class="row">
-			@foreach($brochures as $brochure)
-				@if(isset($brochure->rank))
-					@if($brochure['rank'] == 1 || $brochure['rank'] == 2 || $brochure['rank'] == 3)
-				        <div class="col-md-4">
-				    		<div class="service service-blue">
-				    			<div class="desc">
-				    				<h3>{!! $brochure->name !!}</h3>
-				                    <p class="hidden-xs">{!! $brochure->description !!}</p>
-					                <a href="/uploads/{!! $brochure->file !!}" target="_blank" class="btn-more btn-more-blue btn-block hover-effect">Find Out More</a>            
-				    			</div>
-				    		</div>	
-				    	</div>
-				    @endif
-			    @endif
-		    @endforeach
-		</div><!--/row-->
-		<!-- End Service Blokcs -->
-
 		<!-- Recent Works -->
 	    <div class="headline"><h2>Popular Products</h2></div>
 		    <div class="row">
@@ -97,12 +77,33 @@
 			    @endforeach
 		    </div><!--/row-->
 			<!-- End Recent Works -->
+
+			<!-- Service Blocks -->
+			<div class="headline"><h3>Smart Solutions</h3></div>
+			<div class="row">
+				@foreach($brochures as $brochure)
+					@if(isset($brochure->rank))
+						@if($brochure['rank'] == 1 || $brochure['rank'] == 2 || $brochure['rank'] == 3)
+					        <div class="col-md-4">
+					    		<div class="service service-blue">
+					    			<div class="desc">
+					    				<h3>{!! $brochure->name !!}</h3>
+					                    <p class="hidden-xs">{!! $brochure->description !!}</p>
+						                <a href="/uploads/{!! $brochure->file !!}" target="_blank" class="btn-more btn-more-blue btn-block hover-effect">Find Out More</a>            
+					    			</div>
+					    		</div>	
+					    	</div>
+					    @endif
+				    @endif
+			    @endforeach
+			</div><!--/row-->
+			<!-- End Service Blokcs -->
 		    
 			<!-- Info Blokcs -->
 			<div class="row">
 		    	<!-- Welcome Block -->
 				<div class="col-md-8 hidden-xs">
-					<div class="headline"><h2>Welcome To C-View Windows</h2></div>
+					<div class="headline"><h4>Welcome To C-View Windows</h4></div>
 		            <div class="row">
 		                <div class="col-sm-4">
 		                    <img class="img-responsive margin-bottom-20" src="{{ asset('/img/about/extra.jpg') }}" alt="" />

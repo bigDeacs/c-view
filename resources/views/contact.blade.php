@@ -12,12 +12,12 @@
 
 @section('content')
 	<!--=== Breadcrumbs ===-->
-	<div class="breadcrumbs margin-bottom-20 hidden-xs">
+	<div class="breadcrumbs margin-bottom-20">
 	    <div class="container">
 	        <h1 class="pull-left">Contact Us</h1>
-	        <ul class="pull-right breadcrumb">
+	        <ul class="pull-right breadcrumb hidden-xs">
 	            <li><a href="/">Home</a></li>
-	            <li class="active">Contact Us</li>
+	            <li class="active">Contact</li>
 	        </ul>
 	    </div><!--/container-->
 	</div><!--/breadcrumbs-->
@@ -26,6 +26,7 @@
     <div class="container">     
     <div class="row margin-bottom-30">
         <div class="col-md-8 mb-margin-bottom-30">
+            <div class="headline"><h2>Our Office Location</h2></div>
             <!-- Google Map -->
             <div class="hidden-xs">
                 <iframe src="https://mapsengine.google.com/maps/d/embed?mid=z_yXRxSDstEA.kABQ9eKYROZY" width="100%" style="min-height:350px;"></iframe>
@@ -40,58 +41,67 @@
             <br /></div>
             <!---/map-->
             <!-- End Google Map -->
-            
-            <div class="headline"><h2>Enter your details and we will get back to you</h2></div><br />
-            {!! Form::open(['route' => 'contactRequest']) !!}
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="form-group {!! $errors->has('name') ? 'has-error' : '' !!}">
-                            <label class="control-label" for="name">Name:</label>
-                            {!! Form::text('name', null, ['id' => 'name', 'class' => 'form-control', 'required' => 'required']) !!}
-                            {!! errors_for('name', $errors) !!}
-                        </div>
-                        <div class="form-group {!! $errors->has('email') ? 'has-error' : '' !!}">
-                            <label class="control-label" for="email">Email Address:</label>
-                            {!! Form::email('email', null, ['id' => 'email', 'class' => 'form-control', 'required' => 'required']) !!}
-                            {!! errors_for('email', $errors) !!}
-                        </div>
-                        <div class="form-group {!! $errors->has('phone') ? 'has-error' : '' !!}">
-                            <label class="control-label" for="phone">Phone Number:</label>
-                            {!! Form::tel('phone', null, ['id' => 'phone', 'class' => 'form-control', 'required' => 'required', 'pattern' => '(^13((\ )?\d){4}$)|(^1[38]00((\ )?\d){6}$)|(^(((\(0[23478]\))|(0[23478]))(\ )?)?\d((\ )?\d){7}$)']) !!}
-                            {!! errors_for('phone', $errors) !!}
-                        </div>
-                        <div class="form-group {!! $errors->has('info') ? 'has-error' : '' !!}">
-                            <label class="control-label" for="info">Message:</label>
-                            {!! Form::textarea('info', null, ['class' => 'form-control', 'required' => 'required']) !!}
-                            {!! errors_for('info', $errors) !!}
+            <br />
+
+            @if(isset($sent))
+                <div class="alert alert-success" role="alert">
+                  <span>
+                    <p>Your message was sent successfully! We will be in touch as soon as we can.</p>
+                  </span>
+                </div>
+            @else
+                <div class="headline"><h3>Enter your details and we will get back to you</h3></div>
+                {!! Form::open(['route' => 'contactRequest']) !!}
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group {!! $errors->has('name') ? 'has-error' : '' !!}">
+                                <label class="control-label" for="name">Name:</label>
+                                {!! Form::text('name', null, ['id' => 'name', 'class' => 'form-control', 'required' => 'required']) !!}
+                                {!! errors_for('name', $errors) !!}
+                            </div>
+                            <div class="form-group {!! $errors->has('email') ? 'has-error' : '' !!}">
+                                <label class="control-label" for="email">Email Address:</label>
+                                {!! Form::email('email', null, ['id' => 'email', 'class' => 'form-control', 'required' => 'required']) !!}
+                                {!! errors_for('email', $errors) !!}
+                            </div>
+                            <div class="form-group {!! $errors->has('phone') ? 'has-error' : '' !!}">
+                                <label class="control-label" for="phone">Phone Number:</label>
+                                {!! Form::tel('phone', null, ['id' => 'phone', 'class' => 'form-control', 'required' => 'required', 'pattern' => '(^13((\ )?\d){4}$)|(^1[38]00((\ )?\d){6}$)|(^(((\(0[23478]\))|(0[23478]))(\ )?)?\d((\ )?\d){7}$)']) !!}
+                                {!! errors_for('phone', $errors) !!}
+                            </div>
+                            <div class="form-group {!! $errors->has('info') ? 'has-error' : '' !!}">
+                                <label class="control-label" for="info">Message:</label>
+                                {!! Form::textarea('info', null, ['class' => 'form-control', 'required' => 'required']) !!}
+                                {!! errors_for('info', $errors) !!}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-group">
-                        <div class="col-md-12">
-                            {!! Form::submit('Submit', ['class' => 'btn-u btn-block']) !!}
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                {!! Form::submit('Submit', ['class' => 'btn-u btn-block']) !!}
+                            </div>
                         </div>
                     </div>
-                </div>
-            {!! Form::close() !!}
+                {!! Form::close() !!}
+            @endif
             
         </div><!--/col-md-9-->
 
         
         <div class="col-md-4">
             <!-- Contacts -->
-            <div class="headline"><h2>Contacts</h2></div>
+            <div class="headline"><h4>Contacts</h4></div>
             <ul class="list-unstyled who margin-bottom-30">
-                <li><i class="icon-home"></i>25 Dover Drive, Burleigh Heads, Gold Coast, QLD 4220</li>
-                <li><i class="icon-envelope-alt"></i><a href="mailto:sales@c-view.com.au" class="">sales@c-view.com.au</a></li>
-                <li><i class="icon-phone-sign"></i>(07) 5520 1200</li>
-                <li><i class="icon-print"></i> (07) 5520 1644</li>
-                <!--<li><a href="#"><i class="icon-globe"></i>http://www.example.com</a></li>-->
+                @if($brand->address)<li><i class="icon-home"></i> {!! $brand->address !!}</li>@endif
+                @if($brand->phone)<li><i class="icon-phone-sign"></i> {!! $brand->phone !!}</li>@endif
+                @if($brand->fax)<li><i class="icon-print"></i> {!! $brand->fax !!}</li>@endif
+                @if($brand->email)<li><i class="icon-envelope-alt"></i> <a href="mailto:{!! $brand->email !!}" class="">{!! $brand->email !!}</a></li>@endif
+
             </ul>
 
             <!-- Business Hours -->
-            <div class="headline"><h2>Business Hours</h2></div>
+            <div class="headline"><h4>Business Hours</h4></div>
             
             
             
@@ -101,20 +111,12 @@
             </ul>
             
             <!-- Service Area -->
-            <div class="headline hidden-xs"><h2>Our Service Area</h2></div>
+            <div class="headline hidden-xs"><h4>Our Service Area</h4></div>
             <iframe src="https://mapsengine.google.com/map/embed?mid=z_yXRxSDstEA.k4VlFAbyhrsU" class="hidden-xs" width="100%" height="auto" style="min-height:200px;"></iframe>
             
             <!-- Facebook -->
-            <div class="headline hidden-xs"><h2>Find Us On Facebook</h2></div>
+            <div class="headline hidden-xs"><h4>Find Us On Facebook</h4></div>
             <div class="fb-like-box hidden-xs" style="display: block;" data-href="https://www.facebook.com/cviewwindows" data-width="100%" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-            
-            <!-- Twitter -->
-            <div class="headline hidden-xs"><h2>Follow Us On Twitter</h2></div>
-            <div class="hidden-xs"><a class="twitter-timeline" width="300" height="350" data-dnt="true" href="https://twitter.com/CViewWindows"  data-widget-id="476213545537789952">Tweets by @CViewWindows</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
-
-
-    
 
         </div><!--/col-md-3-->
     </div><!--/row-->        
@@ -126,4 +128,5 @@
 @endsection
 
 @section('scripts')
+    <script src="{{ asset('/plugins/gmap/gmap.min.js') }}"></script>
 @endsection

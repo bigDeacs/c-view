@@ -196,8 +196,9 @@ class PagesController extends Controller {
 
 	public function thankyou()
 	{
+		$this->data['sent'] = true;
 		$data = $this->data;
-		return view('thankyou', $data);
+		return view('contact', $data);
 	}
 
 	public function privacy()

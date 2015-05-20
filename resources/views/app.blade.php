@@ -91,7 +91,7 @@
 	                        </a>
 	                    </li>
 						<li>
-							<a href="/faq">
+							<a href="/faqs/glassrules">
 	                            FAQ's
 	                        </a>
 						</li>
@@ -152,7 +152,7 @@
 							<div class="input-group" style="width: 100%;">
 								<input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email Address" required> 
 								<div style="position: absolute; left: -5000px;">
-									<input type="text" name="b_a926b06132c6a909085105fdf_5b79bdef17" tabindex="-1" value="">
+									<input type="text" name="b_a926b06132c6a909085105fdf_5b79bdef17" tabindex="-1" value="" required>
 								</div>						
 							</div>
 							<div class="input-group" style="width: 100%;">
@@ -194,7 +194,7 @@
 				<div class="col-md-8">						
 		            <p class="copyright-space">
 	                    2012 - <?php echo date("Y") ?> &copy; C-View Windows. ALL Rights Reserved. 
-	                    <a href="privacy.php">Privacy Policy</a><!-- | <a href="#">Terms of Service</a>-->
+	                    <a href="/privacy">Privacy Policy</a><!-- | <a href="#">Terms of Service</a>-->
 	                </p>
 				</div>
 				<div class="col-md-4">	
@@ -209,12 +209,8 @@
 
 	<!-- Scripts -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script src="{{ asset('/plugins/scripts.js') }}"></script>
-	<script src="{{ asset('/plugins/gmap/gmap.min.js') }}"></script>
-	<script src="{{ asset('/plugins/jquery.mixitup.min.js') }}"></script>
 	<script src="{{ asset('/js/app.js') }}"></script>
 	<script src="{{ asset('/plugins/jquery-migrate-1.2.1.min.js') }}"></script>
 	<script>	
