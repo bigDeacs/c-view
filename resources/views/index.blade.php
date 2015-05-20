@@ -79,15 +79,14 @@
 			<!-- End Recent Works -->
 
 			<!-- Service Blocks -->
-			<div class="headline"><h3>Smart Solutions</h3></div>
 			<div class="row">
 				@foreach($brochures as $brochure)
 					@if(isset($brochure->rank))
 						@if($brochure['rank'] == 1 || $brochure['rank'] == 2 || $brochure['rank'] == 3)
 					        <div class="col-md-4">
+					        	<div class="headline"><h3>{!! $brochure->name !!}</h3></div>
 					    		<div class="service service-blue">
 					    			<div class="desc">
-					                    <h3><a class="hover-effect" href="/uploads/{!! $brochure->file !!}">{!! $brochure->name !!}</a></h3>
 					                    <p class="hidden-xs">{!! $brochure->description !!}</p>
 						                <a href="/uploads/{!! $brochure->file !!}" target="_blank" class="btn-more btn-more-blue btn-block hover-effect">Find Out More</a>            
 					    			</div>
