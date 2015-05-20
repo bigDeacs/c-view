@@ -22,7 +22,8 @@ class UpdateCategory extends Request {
 	public function rules()
 	{
 		return [
-			'name' => 'required|unique:categories,name,'.$this->get('id')
+			'name' => 'required|unique:categories,name,'.$this->get('id'),
+			'url' => 'required|unique:categories,url,'.$this->get('id')
 		];
 	}
 

@@ -16,7 +16,7 @@ class Type extends Model {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'status'];
+	protected $fillable = ['name', 'url', 'status'];
 
 	public function products()
     {

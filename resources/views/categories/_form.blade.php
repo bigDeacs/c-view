@@ -1,8 +1,13 @@
 <div class="form-group row">
-	<div class="col-md-12">
+	<div class="col-md-6">
 		<label for="name">Name</label>
 		{!! Form::text('name', null, ['class' => 'form-control input-sm']) !!}
 		{!! errors_for('name', $errors) !!}
+	</div>
+	<div class="col-md-6">
+		<label for="name">Url</label>
+		{!! Form::text('url', null, ['class' => 'form-control input-sm']) !!}
+		{!! errors_for('url', $errors) !!}
 	</div>
 </div>
 

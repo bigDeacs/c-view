@@ -22,7 +22,8 @@ class CreateType extends Request {
 	public function rules()
 	{
 		return [
-			'name' 	=> 'required|unique:types'
+			'name' 	=> 'required|unique:types',
+			'url' 	=> 'required|unique:types'
 		];
 	}
 

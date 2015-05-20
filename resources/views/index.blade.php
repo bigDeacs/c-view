@@ -68,14 +68,14 @@
 				            <div class="thumbnails thumbnail-style thumbnail-kenburn">
 				            	<div class="thumbnail-img">
 				                    <div class="overflow-hidden">
-				                        <a href="{!! $product->url !!}">
+				                        <a href="/{!! $product->category->url !!}/{!! $product->url !!}">
 				                        	<img class="img-responsive" src="/images/{!! $product->image !!}" alt="{!! $product->name !!}" />
 				                        </a>
 				                    </div>
-				                    <a class="btn-more hover-effect hidden-xs" href="{!! $product->url !!}">read more +</a>					
+				                    <a class="btn-more hover-effect hidden-xs" href="/{!! $product->category->url !!}/{!! $product->url !!}">read more +</a>					
 				                </div>
 				                <div class="caption">
-				                    <h3 style="min-height: 66px;"><a class="hover-effect" href="{!! $product->url !!}">{!! $product->name !!}</a></h3>
+				                    <h3 style="min-height: 66px;"><a class="hover-effect" href="/{!! $product->category->url !!}/{!! $product->url !!}">{!! $product->name !!}</a></h3>
 				                </div>
 				            </div>
 				        </div>

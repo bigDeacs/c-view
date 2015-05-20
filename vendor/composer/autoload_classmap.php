@@ -427,4 +427,6 @@ return array(
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/Text/Template.php',
+    'UpdateCat' => $baseDir . '/database/migrations/2015_05_20_070141_update_cat.php',
+    'UpdateTypes' => $baseDir . '/database/migrations/2015_05_20_065902_update_types.php',
 );

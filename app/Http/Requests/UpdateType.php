@@ -22,7 +22,8 @@ class UpdateType extends Request {
 	public function rules()
 	{
 		return [
-			'name' => 'required|unique:types,name,'.$this->get('id')
+			'name' => 'required|unique:types,name,'.$this->get('id'),
+			'url' => 'required|unique:types,url,'.$this->get('id')
 		];
 	}
 
