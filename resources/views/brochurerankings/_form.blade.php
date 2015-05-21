@@ -1,4 +1,10 @@
 <div class="form-group row">
+	<div class="col-md-12">
+		<button class="btn btn-lg btn-success" style="float: right;"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Submit</button>
+	</div>
+</div>
+
+<div class="form-group row">
 	@if(isset($rankings))
 		@foreach($rankings as $ranking)
 			<div class="col-md-3">
@@ -27,9 +33,3 @@
 </div>
 
 {!! Form::hidden('rankable_type', 'App\Brochure') !!}
-
-<div class="form-group row">
-	<div class="col-md-12">
-		{!! Form::submit('Submit', ['class' => 'btn btn-primary btn-block']) !!}
-	</div>
-</div>

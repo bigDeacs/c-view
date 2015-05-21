@@ -16,6 +16,6 @@ class Brand extends Model {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['name', 'logo', 'website', 'address', 'email', 'phone', 'fax', 'about'];
+	protected $fillable = ['name', 'logo', 'website', 'address', 'email', 'phone', 'fax', 'about', 'color1', 'color2', 'color3', 'color4', 'facebook', 'twitter', 'google', 'instagram', 'yellow', 'pinterest', 'vimeo', 'youtube', 'houzz'];
 
 }

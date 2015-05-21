@@ -41,7 +41,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-One" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Energy Ratings - About Energy Efficiency
+                                <i class="icon-chevron-sign-down"></i> Understanding Energy Ratings - About Energy Efficiency
                             </a>
                         </h4>
                     </div>
@@ -77,7 +77,7 @@ Find your climate zone at <a href="http://www.abcb.gov.au/en/major-initiatives/e
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Two" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Energy Ratings - Hot Climate Zones 1, 2 &amp; 3
+                                <i class="icon-chevron-sign-down"></i> Understanding Energy Ratings - Hot Climate Zones 1, 2 &amp; 3
                             </a>
                         </h4>
                     </div>
@@ -142,7 +142,7 @@ $150-$250 and up to 0.35t of GHG. (Based on Brisbane, 240m house)</td>
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Three" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Energy Ratings - What The Stars Mean
+                                <i class="icon-chevron-sign-down"></i> Understanding Energy Ratings - What The Stars Mean
                             </a>
                         </h4>
                     </div>

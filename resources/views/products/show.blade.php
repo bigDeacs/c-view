@@ -7,7 +7,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading"><h1>{!! $product->name !!}
 					<div class="btn-group" role="group" style="display: flex; float: right;">
-						<a href="{{ url('/home/products/'.$product->id.'/edit') }}" class="btn btn-warning btn-lg">Edit</a><a href="{{ url('/home/products') }}" class="btn btn-primary btn-lg">Back</a>
+						<a href="{{ url('/home/products/'.$product->id.'/edit') }}" class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</a><a href="{{ url('/home/products') }}" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Back</a>
 					</div>
 				</h1></div>
 

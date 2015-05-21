@@ -69,7 +69,7 @@ class PagesController extends Controller {
 
 	public function windows()
 	{
-		$this->data['products'] = Product::where('status', '=', 1)->whereHas('category', function($q)
+		$this->data['products'] = Product::where('status', '=', 1)->whereHas('type', function($q)
 		{
 		    $q->where('name', '=', 'Windows');
 
@@ -81,7 +81,7 @@ class PagesController extends Controller {
 	public function window($id)
 	{
 		$this->data['product'] = Product::where('url', '=', $id)->where('status', '=', 1)->first();
-		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('category', function($q)
+		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('type', function($q)
 		{
 		    $q->where('name', '=', 'Windows');
 
@@ -92,7 +92,7 @@ class PagesController extends Controller {
 
 	public function doors()
 	{
-		$this->data['products'] = Product::where('status', '=', 1)->whereHas('category', function($q)
+		$this->data['products'] = Product::where('status', '=', 1)->whereHas('type', function($q)
 		{
 		    $q->where('name', '=', 'Doors');
 
@@ -104,7 +104,7 @@ class PagesController extends Controller {
 	public function door($id)
 	{
 		$this->data['product'] = Product::where('url', '=', $id)->where('status', '=', 1)->first();
-		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('category', function($q)
+		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('type', function($q)
 		{
 		    $q->where('name', '=', 'Doors');
 
@@ -115,7 +115,7 @@ class PagesController extends Controller {
 
 	public function commercials()
 	{
-		$this->data['products'] = Product::where('status', '=', 1)->whereHas('category', function($q)
+		$this->data['products'] = Product::where('status', '=', 1)->whereHas('type', function($q)
 		{
 		    $q->where('name', '=', 'Commercial');
 
@@ -127,7 +127,7 @@ class PagesController extends Controller {
 	public function commercial($id)
 	{
 		$this->data['product'] = Product::where('url', '=', $id)->where('status', '=', 1)->first();
-		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('category', function($q)
+		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('type', function($q)
 		{
 		    $q->where('name', '=', 'Commercial');
 
@@ -138,7 +138,7 @@ class PagesController extends Controller {
 
 	public function screens()
 	{
-		$this->data['products'] = Product::where('status', '=', 1)->whereHas('category', function($q)
+		$this->data['products'] = Product::where('status', '=', 1)->whereHas('type', function($q)
 		{
 		    $q->where('name', '=', 'Screens');
 
@@ -150,7 +150,7 @@ class PagesController extends Controller {
 	public function screen($id)
 	{
 		$this->data['product'] = Product::where('url', '=', $id)->where('status', '=', 1)->first();
-		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('category', function($q)
+		$this->data['products'] = Product::where('url', '!=', $id)->where('status', '=', 1)->whereHas('type', function($q)
 		{
 		    $q->where('name', '=', 'Screens');
 

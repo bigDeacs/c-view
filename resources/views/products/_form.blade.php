@@ -1,4 +1,10 @@
 <div class="form-group row">
+	<div class="col-md-12">
+		<button class="btn btn-lg btn-success" style="float: right;"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Submit</button>
+	</div>
+</div>
+
+<div class="form-group row">
 	<div class="col-md-6 {!! $errors->has('name') ? 'has-error' : '' !!}">
 		<label for="name">Name</label>
 		{!! Form::text('name', null, ['class' => 'form-control input-sm', 'id' => 'name']) !!}
@@ -53,13 +59,13 @@
 </div>
 
 <div class="form-group row">
-	<div class="col-md-4 {!! $errors->has('category_id') ? 'has-error' : '' !!}">
-		<label for="category_id">Category</label>
-		{!! Form::select('category_id', $categories, Input::old('category_id'), ['class' => 'form-control', 'id' => 'category_id']) !!}
-	</div>
 	<div class="col-md-4 {!! $errors->has('type_id') ? 'has-error' : '' !!}">
 		<label for="type_id">Type</label>
 		{!! Form::select('type_id', $types, Input::old('type_id'), ['class' => 'form-control', 'id' => 'type_id']) !!}
+	</div>
+	<div class="col-md-4 {!! $errors->has('category_id') ? 'has-error' : '' !!}">
+		<label for="category_id">Category</label>
+		{!! Form::select('category_id', $categories, Input::old('category_id'), ['class' => 'form-control', 'id' => 'category_id']) !!}
 	</div>
 	<div class="col-md-4 {!! $errors->has('brochure_id') ? 'has-error' : '' !!}">
 		<label for="brochure_id">Brochure</label>
@@ -94,11 +100,4 @@
 			</div>
 		</div>
   	</div>
-</div>
-<br /><br />
-
-<div class="form-group row">
-	<div class="col-md-12">
-		<button class="btn btn-sm btn-info">Submit</button>
-	</div>
 </div>

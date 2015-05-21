@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>C-View Windows | Admin</title>
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
@@ -11,6 +11,9 @@
 	<link rel="stylesheet" href="//cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.css">
 	<link rel="stylesheet" href="/css/pick-a-color-1.2.3.min.css">
 	<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+
+	<link rel="stylesheet" media="all" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="/css/jquery-ui-timepicker-addon.css" />
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -44,8 +47,8 @@
 								<li><a href="{{ url('/home/products') }}"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Products</a></li>
 								<li><a href="{{ url('/home/productrankings') }}"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Product Ranking</a></li>
 								<li class="divider"></li>
-								<li><a href="{{ url('/home/categories') }}"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Product Categories</a></li>
-								<li><a href="{{ url('/home/types') }}"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Product Types</a></li>
+								<li><a href="{{ url('/home/types') }}"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Product Types</a></li>
+								<li><a href="{{ url('/home/categories') }}"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Product Categories</a></li>
 								<li><a href="{{ url('/home/colours') }}"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Product Colours</a></li>
 							</ul>
 						</li>
@@ -106,6 +109,7 @@
 
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
 	<script>
@@ -125,7 +129,10 @@
     <script src="/js/tinycolor-0.9.15.min.js"></script>
 	<script src="/js/pick-a-color-1.2.3.min.js"></script>
 	<script>
-		$(".pick-a-color").pickAColor();
+		$(".pick-a-color").pickAColor({
+		  allowBlank              : true,
+		  inlineDropdown          : true
+		});
 	</script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
     <script type="text/javascript">
@@ -155,5 +162,23 @@
 		        });
 		});
 	</script>
+
+	<script type="text/javascript" src="/js/jquery-ui-timepicker-addon.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-sliderAccess.js"></script>
+	<script type="text/javascript">
+		/*
+	  	jQuery Document ready
+		*/
+		$(function()
+		{
+			$('#published_at').datetimepicker(
+			{
+				dateFormat: "yy-mm-dd",
+				timeFormat: "HH:mm:ss",
+				numberOfMonths: 1
+			});
+		});
+	</script>
+
 </body>
 </html>

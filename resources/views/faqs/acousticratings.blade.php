@@ -41,7 +41,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-One" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Acoustic Ratings
+                                <i class="icon-chevron-sign-down"></i> Understanding Acoustic Ratings
                             </a>
                         </h4>
                     </div>
@@ -64,7 +64,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Two" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Sound Reduction
+                                <i class="icon-chevron-sign-down"></i> Sound Reduction
                             </a>
                         </h4>
                     </div>
@@ -95,7 +95,7 @@ airspace is about 300mm.
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Three" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding RW Ratings
+                                <i class="icon-chevron-sign-down"></i> Understanding RW Ratings
                             </a>
                         </h4>
                     </div>

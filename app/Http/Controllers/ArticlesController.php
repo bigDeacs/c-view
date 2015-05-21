@@ -105,7 +105,7 @@ class ArticlesController extends Controller {
 			}
 			$article->tags()->sync($currentTags);
 		}
-		return redirect()->route('articles.show', [$article->id]);
+		return redirect()->route('home.articles.show', [$article->id]);
 	}
 
 	public function activate($id)

@@ -102,8 +102,15 @@
 
             <!-- Business Hours -->
             <div class="headline"><h4>Business Hours</h4></div>
-            
-            
+            @if(date('N') == 6 || date('N') == 7)
+                <span style="font-weight:bold;color:red;">Closed Now</span>
+            @else
+                @if(date('H:i') < '07:30' || date('H:i') > '16:00')
+                    <span style="font-weight:bold;color:red;">Closed Now</span>
+                @else
+                    <span style="font-weight:bold;color:green;">Open Now</span>
+                @endif
+            @endif
             
             <ul class="list-unstyled margin-bottom-30">
                 <li><strong>Monday-Friday:</strong> 7:30am to 4pm</li>

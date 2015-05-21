@@ -41,7 +41,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-One" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Glass Rules - Maximum Areas
+                                <i class="icon-chevron-sign-down"></i> Understanding Glass Rules - Maximum Areas
                             </a>
                         </h4>
                     </div>
@@ -83,7 +83,7 @@ to size restrictions imposed through AS1288-2006.
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Two" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Glass Rules - Human Impact
+                                <i class="icon-chevron-sign-down"></i> Understanding Glass Rules - Human Impact
                             </a>
                         </h4>
                     </div>
@@ -140,7 +140,7 @@ conditions are met:
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Three" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Glass Rules - Manifestation
+                                <i class="icon-chevron-sign-down"></i> Understanding Glass Rules - Manifestation
                             </a>
                         </h4>
                     </div>
@@ -206,7 +206,7 @@ width not less than 40mm.</li>
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Four" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Glass Rules - Low Level Glazing
+                                <i class="icon-chevron-sign-down"></i> Understanding Glass Rules - Low Level Glazing
                             </a>
                         </h4>
                     </div>
@@ -231,7 +231,7 @@ Larger areas are not permitted regardless of thickness.
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Five" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Glass Rules - Wet Areas
+                                <i class="icon-chevron-sign-down"></i> Understanding Glass Rules - Wet Areas
                             </a>
                         </h4>
                     </div>
@@ -257,7 +257,7 @@ way that all pieces remain bonded to the backing in the event of breakage.
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Six" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Glass Rules - Splashbacks
+                                <i class="icon-chevron-sign-down"></i> Understanding Glass Rules - Splashbacks
                             </a>
                         </h4>
                     </div>
@@ -296,7 +296,7 @@ retardant board behind them.
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Seven" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Glass Rules - Stairway Glazing
+                                <i class="icon-chevron-sign-down"></i> Understanding Glass Rules - Stairway Glazing
                             </a>
                         </h4>
                     </div>
@@ -321,7 +321,7 @@ human impact and therefore all glazing surrounding a stairway in this high risk 
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Eight" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Glass Rules - Restricted Openings
+                                <i class="icon-chevron-sign-down"></i> Understanding Glass Rules - Restricted Openings
                             </a>
                         </h4>
                     </div>

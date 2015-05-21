@@ -8,7 +8,7 @@
 				@if($brand)
 					<div class="panel-heading"><h1>Brand Settings</h1></div>
 				@else
-					<div class="panel-heading"><h1>Brand Settings<a href="{{ url('/home/brands/create') }}" class="btn btn-primary btn-lg"style="float: right;">Create</a></h1></div>
+					<div class="panel-heading"><h1>Brand Settings<a href="{{ url('/home/brands/create') }}" class="btn btn-warning btn-lg" style="float: right;"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Create</a></h1></div>
 				@endif
 
 				<div class="panel-body">

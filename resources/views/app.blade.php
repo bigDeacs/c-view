@@ -18,6 +18,46 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/img/touch-icon-ipad.png') }}">
 	<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('/img/touch-icon-iphone-retina.png') }}">
 	<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/img/touch-icon-ipad-retina.png') }}">
+	@if($brand['color1'] != '' && $brand['color2'] != '' && $brand['color3'] != '' && $brand['color4'] != '')
+		<style>
+			.header .navbar-default .navbar-nav > li > a:hover, .header .navbar-default .navbar-nav > .active > a, .headline h2, .headline h3, .headline h4 {
+			  border-bottom: 2px solid #{!! $brand['color1'] !!}!important;
+			}
+			.header .dropdown-menu {
+			  border-top: solid 2px #{!! $brand['color1'] !!};
+			}
+			.footer a, .copyright a, .footer a:hover, .copyright a:hover, i, .header .navbar-default .navbar-nav > .open > a, .header .navbar-default .navbar-nav > .open > a:hover, .header .navbar-default .navbar-nav > .open > a:focus, .breadcrumb li.active, .breadcrumb li a:hover, a:focus, a:hover, a:active, a, .who li i, .who li:hover i, .who li:hover a {
+			  color: #{!! $brand['color1'] !!};
+			}
+			.sorting-block .sorting-nav li.active {
+			  color: #{!! $brand['color1'] !!}!important;
+			  border-bottom: solid 1px #{!! $brand['color1'] !!}!important;
+			}
+			.btn-u, .intro a.btn-more, .thumbnail-style a.btn-more, .service a.btn-more-blue, .sorting-block .sorting-grid li a:hover span.sorting-cover {
+			  background: #{!! $brand['color1'] !!}!important;
+			}
+			blockquote:hover {
+			  border-left-color: #{!! $brand['color1'] !!};
+			}
+			.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+			  background-color: #{!! $brand['color1'] !!};
+			  border-color: #{!! $brand['color1'] !!};
+			}
+			.footer {
+			  color: #{!! $brand['color2'] !!}!important;
+			  background: #{!! $brand['color3'] !!};
+			}
+			.footer p {
+				color: #{!! $brand['color2'] !!}!important;
+			}
+			.copyright {
+			  background: #{!! $brand['color4'] !!};
+			}
+			.tag-box-v2 {
+			  border-left: solid 2px #{!! $brand['color1'] !!};
+			}
+		</style>
+	@endif
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,9 +86,11 @@
 	                <p class="phone_btn"><a href="tel:{!! $brand->phone !!}" class="btn btn-block btn-lg btn-primary"><i class="icon-phone"></i> Click to Call</a></p>
 	            </li>
 	        </ul>
-	        <a href="https://www.facebook.com/cviewwindows" target="_blank">
-	            <img class="pull-left phone" style="padding-bottom: 15px;" src="{{ asset('/img/FB-114.png') }}" width="114" alt="Find us on Facebook">
-	        </a>
+	        @if($brand->facebook)
+	        	<a href="https://www.facebook.com/{!! $brand->facebook !!}" target="_blank">
+	           		<img class="pull-left phone" style="padding-bottom: 15px;" src="{{ asset('/img/FB-114.png') }}" width="114" alt="Find us on Facebook">
+	        	</a>
+	        @endif
 	    </div>      
 	</div><!--/top-->
 	<!--=== End Top ===-->    
@@ -174,13 +216,13 @@
 			        <div class="headline"><h2>Stay Connected</h2></div>	
 	                <ul class="social-icons">
 	                    <!--<li><a href="#" data-original-title="Feed" class="social_rss"></a></li>-->
-	                    <li><a href="https://www.facebook.com/cviewwindows" data-original-title="Facebook" class="social_facebook" target="_blank"></a></li>
-	                    <li><a href="https://twitter.com/CViewWindows" data-original-title="Twitter" class="social_twitter" target="_blank"></a></li>
-	                    <li><a href="https://www.google.com/+C-viewAu" data-original-title="Goole Plus" class="social_googleplus" target="_blank"></a></li>
-						<li><a href="http://www.yellowpages.com.au/qld/burleigh-heads/c-view-windows-12403345-listing.html" data-original-title="Yellow Pages" class="social_yellowpages" target="_blank"></a></li>
-	                    <li><a href="http://www.pinterest.com/cviewwindows/" data-original-title="Pinterest" class="social_pintrest" target="_blank"></a></li>
-	                    <li><a href="http://vimeo.com/user16069931" data-original-title="Vimeo" class="social_vimeo" target="_blank"></a></li>
-						<li><a href="http://www.houzz.com.au/pro/cviewwindows/c-view-windows" data-original-title="Houzz" class="social_houzz" target="_blank"></a></li>
+	                    @if($brand->facebook)<li><a href="https://www.facebook.com/{!! $brand->facebook !!}" data-original-title="Facebook" class="social_facebook" target="_blank"></a></li>@endif
+	                    @if($brand->twitter)<li><a href="https://twitter.com/{!! $brand->twitter !!}" data-original-title="Twitter" class="social_twitter" target="_blank"></a></li>@endif
+	                    @if($brand->google)<li><a href="https://www.google.com/+{!! $brand->google !!}" data-original-title="Goole Plus" class="social_googleplus" target="_blank"></a></li>@endif
+						@if($brand->yellow)<li><a href="http://www.yellowpages.com.au/{!! $brand->yellow !!}" data-original-title="Yellow Pages" class="social_yellowpages" target="_blank"></a></li>@endif
+	                    @if($brand->pinterest)<li><a href="http://www.pinterest.com/{!! $brand->pinterest !!}" data-original-title="Pinterest" class="social_pintrest" target="_blank"></a></li>@endif
+	                    @if($brand->vimeo)<li><a href="http://vimeo.com/{!! $brand->vimeo !!}" data-original-title="Vimeo" class="social_vimeo" target="_blank"></a></li>@endif
+						@if($brand->houzz)<li><a href="http://www.houzz.com.au/pro/{!! $brand->houzz !!}" data-original-title="Houzz" class="social_houzz" target="_blank"></a></li>@endif
 	                </ul>
 				</div><!--/col-md-4-->
 			</div><!--/row-->	

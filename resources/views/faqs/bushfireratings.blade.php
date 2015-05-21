@@ -41,7 +41,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-One" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Bushfire Ratings - About Bushfire Ratings
+                                <i class="icon-chevron-sign-down"></i> Understanding Bushfire Ratings - About Bushfire Ratings
                             </a>
                         </h4>
                     </div>
@@ -67,7 +67,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Two" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Understanding Energy Ratings - How Does It Work
+                                <i class="icon-chevron-sign-down"></i> Understanding Energy Ratings - How Does It Work
                             </a>
                         </h4>
                     </div>

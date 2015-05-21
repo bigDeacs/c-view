@@ -26,7 +26,7 @@
 	    <div class="row">
 		<h3 class="col-md-12">Residential</h3>
 		@foreach($products as $product)
-			@if($product->type->name == 'Residential')
+			@if($product->category->name == 'Residential')
 		        <div class="col-md-3 col-xs-6">
 					<div class="thumbnails thumbnail-style thumbnail-kenburn">
 			            <div class="thumbnail-img">
@@ -50,7 +50,7 @@
 		<div class="row">
 		<h3 class="col-md-12">Prestige</h3>
 		@foreach($products as $product)
-			@if($product->type->name == 'Prestige')
+			@if($product->category->name == 'Prestige')
 		        <div class="col-md-3 col-xs-6">
 					<div class="thumbnails thumbnail-style thumbnail-kenburn">
 			            <div class="thumbnail-img">

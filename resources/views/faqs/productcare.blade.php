@@ -41,7 +41,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-One" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Maintenance of Powder Coated Aluminium Finishes
+                                <i class="icon-chevron-sign-down"></i> Maintenance of Powder Coated Aluminium Finishes
                             </a>
                         </h4>
                     </div>
@@ -72,7 +72,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Two" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Maintenance of Window and Door Glass
+                                <i class="icon-chevron-sign-down"></i> Maintenance of Window and Door Glass
                             </a>
                         </h4>
                     </div>
@@ -101,7 +101,7 @@ remove any detergent residue.
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Three" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Special instructions for Low-E coated glass products
+                                <i class="icon-chevron-sign-down"></i> Special instructions for Low-E coated glass products
                             </a>
                         </h4>
                     </div>
@@ -128,7 +128,7 @@ water or recommended glass cleaner solution.</li>
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Four" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Maintenance of Window and Door Tracks
+                                <i class="icon-chevron-sign-down"></i> Maintenance of Window and Door Tracks
                             </a>
                         </h4>
                     </div>
@@ -154,7 +154,7 @@ must be cleared of any obstruction.</li>
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Five" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-chevron-sign-down color-green"></i> Maintenance of Window and Door Rollers
+                                <i class="icon-chevron-sign-down"></i> Maintenance of Window and Door Rollers
                             </a>
                         </h4>
                     </div>

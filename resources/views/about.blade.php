@@ -45,7 +45,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-One" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-ok color-green"></i> No Obligation Quotes
+                                <i class="icon-ok"></i> No Obligation Quotes
                             </a>
                         </h4>
                     </div>
@@ -71,7 +71,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Two" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-ok color-green"></i> Competitively Short Lead Times
+                                <i class="icon-ok"></i> Competitively Short Lead Times
                             </a>
                         </h4>
                     </div>
@@ -96,7 +96,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Three" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-ok color-green"></i> Unique and Professional Quality
+                                <i class="icon-ok"></i> Unique and Professional Quality
                             </a>
                         </h4>
                     </div>
@@ -122,7 +122,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a href="#collapse-Four" data-parent="#accordion-1" data-toggle="collapse" class="accordion-toggle">
-                                <i class="icon-ok color-green"></i> Going 'The Extra Mile'
+                                <i class="icon-ok"></i> Going 'The Extra Mile'
                             </a>
                         </h4>
                     </div>

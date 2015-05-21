@@ -95,7 +95,7 @@ class BrandsController extends Controller {
 			}
 		}
 		$brand->save();		
-		return redirect('home/brands');
+		return redirect()->route('home.brands.show', [$brand->id]);
 	}
 
 }

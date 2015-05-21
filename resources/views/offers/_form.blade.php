@@ -1,4 +1,10 @@
 <div class="form-group row">
+	<div class="col-md-12">
+		<button class="btn btn-lg btn-success" style="float: right;"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Submit</button>
+	</div>
+</div>
+
+<div class="form-group row">
 	<div class="col-md-12 {!! $errors->has('promo') ? 'has-error' : '' !!}">
 		<label for="promo">Promo</label>
 		{!! Form::text('promo', null, ['class' => 'form-control input-sm']) !!}
@@ -16,11 +22,5 @@
 		<label for="product_id">Product</label>
 		{!! Form::select('product_id', $products, Input::old('product_id'), ['class' => 'form-control', 'id' => 'product_id']) !!}
 		{!! errors_for('product_id', $errors) !!}
-	</div>
-</div>
-
-<div class="form-group row">
-	<div class="col-md-12">
-		<button class="btn btn-sm btn-info">Submit</button>
 	</div>
 </div>

@@ -137,7 +137,7 @@ class ProductsController extends Controller {
 			}
 			$product->images()->sync($sync);
 		}
-		return redirect()->route('products.show', [$product->id]);
+		return redirect()->route('home.products.show', [$product->id]);
 	}
 
 	public function activate($id)

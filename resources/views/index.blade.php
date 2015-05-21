@@ -68,14 +68,14 @@
 				            <div class="thumbnails thumbnail-style thumbnail-kenburn">
 				            	<div class="thumbnail-img">
 				                    <div class="overflow-hidden">
-				                        <a href="/{!! $product->category->url !!}/{!! $product->url !!}">
+				                        <a href="/{!! $product->type->url !!}/{!! $product->url !!}">
 				                        	<img class="img-responsive" src="/images/{!! $product->image !!}" alt="{!! $product->name !!}" />
 				                        </a>
 				                    </div>
-				                    <a class="btn-more hover-effect hidden-xs" href="/{!! $product->category->url !!}/{!! $product->url !!}">read more +</a>					
+				                    <a class="btn-more hover-effect hidden-xs" href="/{!! $product->type->url !!}/{!! $product->url !!}">read more +</a>					
 				                </div>
 				                <div class="caption">
-				                    <h3 style="min-height: 66px;"><a class="hover-effect" href="/{!! $product->category->url !!}/{!! $product->url !!}">{!! $product->name !!}</a></h3>
+				                    <h3 style="min-height: 66px;"><a class="hover-effect" href="/{!! $product->type->url !!}/{!! $product->url !!}">{!! $product->name !!}</a></h3>
 				                </div>
 				            </div>
 				        </div>
@@ -116,10 +116,10 @@
 		                <div class="col-sm-8">
 							<p>For any job, look to us for:</p>
 		                    <ul class="list-unstyled margin-bottom-20">
-		                        <li><i class="icon-ok color-green"></i> No Obligation Quotes</li>
-		                        <li><i class="icon-ok color-green"></i> Competitively Short Lead Times</li>
-		                        <li><i class="icon-ok color-green"></i> Unique and Professional Quality</li>
-		                        <li><i class="icon-ok color-green"></i> Going 'The Extra Mile'</li>
+		                        <li><i class="icon-ok"></i> No Obligation Quotes</li>
+		                        <li><i class="icon-ok"></i> Competitively Short Lead Times</li>
+		                        <li><i class="icon-ok"></i> Unique and Professional Quality</li>
+		                        <li><i class="icon-ok"></i> Going 'The Extra Mile'</li>
 		                    </ul>                    
 		                </div>
 		            </div>
