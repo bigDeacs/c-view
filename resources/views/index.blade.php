@@ -64,7 +64,7 @@
 		    <div class="row">
 				@foreach($products as $product)
 					@if(isset($product->rank))
-				        <div class="col-md-3 col-xs-6">
+				        <div class="col-md-3 col-sm-6">
 				            <div class="thumbnails thumbnail-style thumbnail-kenburn">
 				            	<div class="thumbnail-img">
 				                    <div class="overflow-hidden">
