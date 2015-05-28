@@ -27,7 +27,7 @@
 								    <tbody>
 										<tr class="success">								
 											<td>{!! $brand->name !!}</td>
-											<td><img src="/images/{!! $brand->logo !!}" class="img-responsive" width="150" /></td>
+											<td><img src="/uploads/{!! $brand->logo !!}" class="img-responsive" width="150" /></td>
 											<td><a href="{!! $brand->website !!}" target="_blank">C-View.com.au</a></td>
 											<td>
 												<div class="btn-group" role="group" style="display: flex;">

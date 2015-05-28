@@ -9,7 +9,7 @@
 
 				<div class="panel-body">
 					<a href="{{ url('/home/brands/'.$brand->id.'/edit') }}" class="btn btn-warning btn-lg" style="float: right;"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</a>
-					<img src="/images/{!! $brand->logo !!}" class="img-responsive" /><br />
+					<img src="/uploads/{!! $brand->logo !!}" class="img-responsive" /><br />
 					@if($brand->website)<p><strong>Website: </strong><a href="{!! $brand->website !!}" target="_blank">C-View.com.au</a></p>@endif
 					@if($brand->address)<p><strong>Address: </strong>{!! $brand->address !!}</p>@endif
 					@if($brand->email)<p><strong>Email: </strong>{!! $brand->email !!}</p>@endif

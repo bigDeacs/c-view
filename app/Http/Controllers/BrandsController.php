@@ -44,7 +44,7 @@ class BrandsController extends Controller {
 			if($request->file('logo')->isValid()) 
 			{
 				$logo = $request->file('logo');
-				$moveLogo = $logo->move(storage_path() . '/images', $filename = time() . '-' . $logo->getClientOriginalName());
+				$moveLogo = $logo->move(public_path() . '/uploads', $filename = time() . '-' . $logo->getClientOriginalName());
 				$brand->logo = $filename;
 			} else {
 				return redirect()->back()->withInput();
@@ -87,9 +87,9 @@ class BrandsController extends Controller {
 			if($request->file('logo')->isValid()) 
 			{
 				$logo = $request->file('logo');
-				$moveLogo = $logo->move(storage_path() . '/images', $filename = time() . '-' . $logo->getClientOriginalName());
+				$moveLogo = $logo->move(public_path() . '/uploads', $filename = time() . '-' . $logo->getClientOriginalName());
 				$brand->update(['logo' => $filename]);
-				File::delete(storage_path() . '/images/' . $oldLogo);
+				File::delete(public_path() . '/uploads/' . $oldLogo);
 			} else {
 				return redirect()->back()->withInput();
 			}
