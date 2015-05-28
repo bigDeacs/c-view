@@ -46,7 +46,7 @@ if ( ! function_exists('app'))
 	 * @param  array   $parameters
 	 * @return mixed|\Illuminate\Foundation\Application
 	 */
-	function app($make = null, $parameters = [])
+	function app($make = null, $parameters = array())
 	{
 		if (is_null($make)) return Container::getInstance();
 
