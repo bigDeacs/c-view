@@ -30,7 +30,7 @@
 											@endif
 												<td>{!! $image->id !!}</td>
 												<td>{!! $image->name !!}</td>
-												<td><img src="/images/{!! $image->thumb !!}" class="img-responsive" width="150" /></td>
+												<td><img src="/uploads/{!! $image->thumb !!}" class="img-responsive" width="150" /></td>
 												<td>{!! $image->type !!}</td>
 												<td>
 													<div class="btn-group" role="group" style="display: flex;">

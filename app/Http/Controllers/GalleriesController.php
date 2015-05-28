@@ -46,7 +46,7 @@ class GalleriesController extends Controller {
 			if($request->file('image')->isValid()) 
 			{
 				$upload = $request->file('image');
-				$moveUpload = $upload->move(storage_path() . '/images', $filename = time() . '-' . $upload->getClientOriginalName());
+				$moveUpload = $upload->move(storage_path() . '/uploads', $filename = time() . '-' . $upload->getClientOriginalName());
 				$image->file = $filename;
 			} else {
 				return redirect()->back()->withInput();
@@ -89,9 +89,9 @@ class GalleriesController extends Controller {
 			if($request->file('image')->isValid()) 
 			{
 				$upload = $request->file('image');
-				$moveUpload = $upload->move(storage_path() . '/images', $filename = time() . '-' . $upload->getClientOriginalName());
+				$moveUpload = $upload->move(storage_path() . '/uploads', $filename = time() . '-' . $upload->getClientOriginalName());
 				$image->update(['file' => $filename]);
-				File::delete(storage_path() . '/images/' . $oldUpload);
+				File::delete(storage_path() . '/uploads/' . $oldUpload);
 			} else {
 				return redirect()->back()->withInput();
 			}

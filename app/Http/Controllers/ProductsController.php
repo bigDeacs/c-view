@@ -61,7 +61,7 @@ class ProductsController extends Controller {
 		{
 			$images = $request->file('images');
 			foreach($images as $image) {
-				$move = $image->move(storage_path() . '/images', $filename = time() . '-' . $image->getClientOriginalName());
+				$move = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				if($move) {
 					$imageData = Image::create([
 						'name' => $product->name,
@@ -122,7 +122,7 @@ class ProductsController extends Controller {
 		{
 			$images = $request->file('images');
 			foreach($images as $image) {
-				$move = $image->move(storage_path() . '/images', $filename = time() . '-' . $image->getClientOriginalName());
+				$move = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				if($move) {
 					$imageData = Image::create([
 						'name' => $product->name,
@@ -133,7 +133,7 @@ class ProductsController extends Controller {
 			}
 			$oldImages = $product->images()->get();
 			foreach($oldImages as $oldImage) {
-				File::delete(storage_path() . '/images/' . $oldImage->file);
+				File::delete(storage_path() . '/uploads/' . $oldImage->file);
 			}
 			$product->images()->sync($sync);
 		}

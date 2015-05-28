@@ -39,7 +39,7 @@
 										@else
 											<div class="item">
 										@endif
-								    		<img src="/images/{!! $image->file !!}" alt="{!! $image->name !!}">
+								    		<img src="/uploads/{!! $image->file !!}" alt="{!! $image->name !!}">
 							    		</div>
 							    		<?php $count++; ?>
 									@endforeach

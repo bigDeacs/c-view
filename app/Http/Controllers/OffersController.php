@@ -46,7 +46,7 @@ class OffersController extends Controller {
 			if($request->file('image')->isValid()) 
 			{
 				$image = $request->file('image');
-				$moveImage = $image->move(storage_path() . '/images', $filename = time() . '-' . $image->getClientOriginalName());
+				$moveImage = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				$offer->file = $filename;
 			} else {
 				return redirect()->back()->withInput();
@@ -89,9 +89,9 @@ class OffersController extends Controller {
 			if($request->file('image')->isValid()) 
 			{
 				$image = $request->file('image');
-				$moveImage = $image->move(storage_path() . '/images', $filename = time() . '-' . $image->getClientOriginalName());
+				$moveImage = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				$offer->update(['file' => $filename]);
-				File::delete(storage_path() . '/images/' . $oldImage);
+				File::delete(storage_path() . '/uploads/' . $oldImage);
 			} else {
 				return redirect()->back()->withInput();
 			}

@@ -46,7 +46,7 @@ class BrochuresController extends Controller {
 			if($request->file('image')->isValid()) 
 			{
 				$image = $request->file('image');
-				$moveImage = $image->move(storage_path() . '/thumbs', $filename = time() . '-' . $image->getClientOriginalName());
+				$moveImage = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				$brochure->thumb = $filename;
 			} else {
 				return redirect()->back()->withInput();
@@ -101,9 +101,9 @@ class BrochuresController extends Controller {
 			if($request->file('image')->isValid()) 
 			{
 				$image = $request->file('image');
-				$moveImage = $image->move(storage_path() . '/thumbs', $filename = time() . '-' . $image->getClientOriginalName());
+				$moveImage = $image->move(storage_path() . '/uploads', $filename = time() . '-' . $image->getClientOriginalName());
 				$brochure->update(['thumb' => $filename]);
-				File::delete(storage_path() . '/thumbs/' . $oldImage);
+				File::delete(storage_path() . '/uploads/' . $oldImage);
 			} else {
 				return redirect()->back()->withInput();
 			}

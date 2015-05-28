@@ -28,7 +28,7 @@
 										@endif
 											<td>{!! $offer->id !!}</td>
 											<td>{!! $offer->promo !!}</td>
-											<td><img src="/images/{!! $offer->thumb !!}" class="img-responsive" width="150" /></td>
+											<td><img src="/uploads/{!! $offer->thumb !!}" class="img-responsive" width="150" /></td>
 											<td>
 												<div class="btn-group" role="group" style="display: flex;">
 													<a href="{{ url('/home/offers/'.$offer->id.'/edit') }}" class="btn btn-warning btn-sm">Edit</a>

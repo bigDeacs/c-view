@@ -30,7 +30,7 @@
 										@endif
 											<td>{!! $brochure->id !!}</td>
 											<td>{!! $brochure->name !!}</td>
-											<td><img src="/thumbs/{!! $brochure->thumb !!}" class="img-responsive" width="150" /></td>
+											<td><img src="/uploads/{!! $brochure->thumb !!}" class="img-responsive" width="150" /></td>
 											<td><a href="/uploads/{!! $brochure->file !!}" target="_blank" />Open PDF</a></td>
 											<td>{!! $brochure->type !!}</td>
 											<td>
