@@ -16,6 +16,7 @@
  		<div class="slides" data-group="slides">
 		    <ul>
 	      		@foreach($offers as $offer)
+	      		<li>
 			        <div class="slide-body" data-group="slide">
 			          <img src="/uploads/{!! $offer->file !!}" alt="{!! $offer->promo !!}">
 			        </div>
