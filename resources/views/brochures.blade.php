@@ -38,7 +38,7 @@
 					<li class="col-md-3 col-sm-6 col-xs-12 mix {!! $brochure->label->name !!}" data-cat="{!! $brochure->label->name !!}">
 						<a href="/uploads/{!! $brochure->file !!}" target="_blank">
 							<div class="img-binding">
-								<img class="img-responsive" src="/thumbs/{!! $brochure->thumb !!}" alt="alt" style="position:absolute;">
+								<img class="img-responsive" src="/uploads/{!! $brochure->thumb !!}" alt="alt" style="position:absolute;">
 							</div>
 							<span class="sorting-cover" style="min-height: 66px;">
 								<p style="font-size: 16px; text-align:center;">{!! $brochure->name !!}</p>

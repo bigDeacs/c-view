@@ -17,7 +17,7 @@
 		    <ul>
 	      		@foreach($offers as $offer)
 			        <div class="slide-body" data-group="slide">
-			          <img src="/images/{!! $offer->file !!}" alt="{!! $offer->promo !!}">
+			          <img src="/uploads/{!! $offer->file !!}" alt="{!! $offer->promo !!}">
 			        </div>
 		      	</li>        
 			    @endforeach
@@ -69,7 +69,7 @@
 				            	<div class="thumbnail-img">
 				                    <div class="overflow-hidden">
 				                        <a href="/{!! $product->type->url !!}/{!! $product->url !!}">
-				                        	<img class="img-responsive" src="/images/{!! $product->image !!}" alt="{!! $product->name !!}" />
+				                        	<img class="img-responsive" src="/uploads/{!! $product->image !!}" alt="{!! $product->name !!}" />
 				                        </a>
 				                    </div>
 				                    <a class="btn-more hover-effect hidden-xs" href="/{!! $product->type->url !!}/{!! $product->url !!}">read more +</a>					
@@ -137,7 +137,7 @@
 							@if($brochure['rank'] == 4)
 								<div class="headline"><h2>Featured Brochure</h2></div>
 						        <a href="/uploads/{!! $brochure->file !!}" target="_blank">
-			                    	<img class="img-responsive margin-bottom-20" src="/thumbs/{!! $brochure->thumb !!}" alt="Featured Brochure" />
+			                    	<img class="img-responsive margin-bottom-20" src="/uploads/{!! $brochure->thumb !!}" alt="Featured Brochure" />
 								</a>
 						    @endif
 					    @endif

@@ -40,7 +40,7 @@
 			    		@foreach($product->images as $image)
 				  			<li>
 						        <div class="slide-body" data-group="slide">
-						          <img class="img-responsive lightbox" src="/images/{!! $image->file !!}" alt="{!! $product['name'] !!}" />
+						          <img class="img-responsive lightbox" src="/uploads/{!! $image->file !!}" alt="{!! $product['name'] !!}" />
 						        </div>
 					      	</li>
 				  		@endforeach
@@ -50,7 +50,7 @@
 				  <a class="slider-control right" href="#" data-jump="next"><i class="icon-angle-right"></i></a>
 				</div>
 			@else
-				<img class="img-responsive lightbox" src="/images/{!! $product->images()->first()->file !!}" alt="{!! $product['name'] !!}" />
+				<img class="img-responsive lightbox" src="/uploads/{!! $product->images()->first()->file !!}" alt="{!! $product['name'] !!}" />
 			@endif
 			<!-- RESPONSIVE SLIDER - END -->
 
@@ -176,7 +176,7 @@
 			            	<div class="thumbnail-img">
 			                    <div class="overflow-hidden">
 			                        <a href="{!! $product->url !!}">
-			                        	<img class="img-responsive" src="/images/{!! $product->image !!}" alt="{!! $product->name !!}" />
+			                        	<img class="img-responsive" src="/uploads/{!! $product->image !!}" alt="{!! $product->name !!}" />
 			                        </a>
 			                    </div>
 			                    <a class="btn-more hover-effect hidden-xs" href="{!! $product->url !!}">read more +</a>					

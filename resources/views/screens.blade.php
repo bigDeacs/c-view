@@ -30,7 +30,7 @@
 		            <div class="thumbnail-img">
 		                <div class="overflow-hidden">
 		                    <a href="/screen/{!! $product->url !!}">
-		                        <img class="img-responsive" src="/images/{!! $product->images()->first()->file !!}" alt="{!! $product->name !!}" />
+		                        <img class="img-responsive" src="/uploads/{!! $product->images()->first()->file !!}" alt="{!! $product->name !!}" />
 		                    </a>
 		                </div>
 		                <a class="btn-more hover-effect hidden-xs" href="/screen/{!! $product->url !!}">read more +</a>                   
