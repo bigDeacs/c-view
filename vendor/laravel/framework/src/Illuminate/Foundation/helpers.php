@@ -406,7 +406,7 @@ if ( ! function_exists('resource'))
 	 * @param  array   $options
 	 * @return void
 	 */
-	function resource($name, $controller, array $options = [])
+	function resource($name, $controller, array $options = array())
 	{
 		return app('router')->resource($name, $controller, $options);
 	}
